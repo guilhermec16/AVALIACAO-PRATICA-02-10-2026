@@ -4,8 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clínica Veterinária</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script src="../JS/script.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <h1>Cuidado Pet 🐾🐒</h1>
+
+        <nav>
+            <img src="../IMG/logo.jpg" alt="Logo Cuidado Pet" class="logo">
+            <a href="index.html" class="link">Início</a>
+            <a href="servicos.html" class="link">Serviços</a>
+            <a href="contato.html" class="link">Contato</a>
+            <a href="../HTML/equipe.html" class="link">Equipe</a>
+            <a href="../HTML/confirmacao.html" class="link">Confirmação</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="../IMG/fundo.jpg" alt="Logo Cuidado Pet">
+        </section>
+
+        <section class="sobre">
+            <h2>Sobre a clínica</h2>
+            <p>A Cuidado Pet é uma clínica veterinária dedicada ao bem-estar dos animais de estimação.</p>
+            <p>Nossa equipe de profissionais está pronta para oferecer os melhores cuidados para seu pet.</p>
+            <p>Oferecemos serviços de consultas, vacinas, cirurgias e muito mais.</p>
+        </section>
+
+            <h2 style="text-align: center;">Um pequeno resumo dos nossos serviços</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="../IMG/consulta.jpg" alt="Serviços oferecidos">
+                    <p>Consultas veterinárias</p>
+                </div>
+                <div class="card">
+                    <img src="../IMG/cirurgia.jpg" alt="Serviços oferecidos">
+                    <p>Nossos incriveis banho e tosa</p>
+                </div>
+                <div class="card">
+                    <img src="../IMG/vacinacao.jpg" alt="Serviços oferecidos">
+                    <p>Vacinação de animais</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="servicos">
+            <button class="servico" onclick="window.location.href='servicos.html'">Consulte aqui nossos serviços</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Cuidado Pet. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>

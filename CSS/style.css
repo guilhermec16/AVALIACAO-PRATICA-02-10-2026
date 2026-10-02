@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #F8F9F6;
+    color: #1A2C30;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    padding: 20px 30px;
+    background-color: #0B5D61;
+    border-bottom: 5px solid #BD7A23;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 20px;
+    color: #FFF9F0;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 65px;
+    height: 65px;
+    margin-right: 15px;
+    border: 3px solid #FFF9F0;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.link {
+    position: relative;
+    padding: 8px 12px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.link::after {
+    content: "";
+    position: absolute;
+    right: 12px;
+    bottom: 2px;
+    left: 12px;
+    height: 2px;
+    background-color: #9DE5C9;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.link:hover {
+    color: #9DE5C9;
+}
+
+.link:hover::after {
+    transform: scaleX(1);
+}
+
+main {
+    width: min(100% - 40px, 1150px);
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.hero {
+    width: 100%;
+    height: 430px;
+    margin-bottom: 50px;
+    overflow: hidden;
+    background-color: #159A9C;
+    border-radius: 0 0 18px 18px;
+    box-shadow: 0 8px 20px rgba(11, 93, 97, 0.18);
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sobre {
+    max-width: 850px;
+    margin: 0 auto 55px;
+    padding: 35px 30px;
+    background-color: #FFFFFF;
+    border-left: 6px solid #159A9C;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(11, 93, 97, 0.12);
+    text-align: center;
+}
+
+.sobre h2 {
+    margin-bottom: 18px;
+    color: #0B5D61;
+    font-size: 2rem;
+}
+
+.sobre p {
+    margin-bottom: 10px;
+
+    color: #536467;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.sobre p:last-child {
+    margin-bottom: 0;
+}
+
+main>h2 {
+    margin-bottom: 25px;
+    color: #0B5D61;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    justify-content: center;
+    gap: 22px;
+    margin-bottom: 40px;
+}
+
+.card {
+    overflow: hidden;
+    background-color: #159A9C;
+    border-radius: 12px;
+    box-shadow: 0 8px 18px rgba(11, 93, 97, 0.18);
+    text-align: center;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 13px 25px rgba(11, 93, 97, 0.28);
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    height: 145px;
+    object-fit: cover;
+}
+
+.card p {
+    min-height: 55px;
+    padding: 14px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF9F0;
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+.servicos {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.servico {
+    padding: 13px 25px;
+    color: #0B5D61;
+    background-color: #FFF9F0;
+    border: 2px solid #159A9C;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: color 0.3s ease,
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.servico:hover {
+    color: #FFF9F0;
+    background-color: #0B5D61;
+    transform: translateY(-3px);
+}
+
+footer {
+    padding: 22px;
+    color: #FFF9F0;
+    background-color: #0B5D61;
+    text-align: center;
+}
+
+footer p {
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+
+@media (max-width: 850px) {
+    header {
+        padding: 18px 20px;
+    }
+
+    nav {
+        gap: 5px;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+        margin-right: 8px;
+    }
+
+    .hero {
+        height: 350px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    nav {
+        gap: 2px;
+    }
+
+    .logo {
+        width: 55px;
+        height: 55px;
+        margin-right: 0;
+    }
+
+    .link {
+        padding: 6px 7px;
+        font-size: 0.82rem;
+    }
+
+    main {
+        width: min(100% - 24px, 500px);
+    }
+
+    .hero {
+        height: 250px;
+        margin-bottom: 35px;
+        border-radius: 0 0 14px 14px;
+    }
+
+    .sobre {
+        margin-bottom: 40px;
+        padding: 25px 18px;
+    }
+
+    .sobre h2 {
+        font-size: 1.6rem;
+    }
+
+    .sobre p {
+        font-size: 0.92rem;
+    }
+
+    main>h2 {
+        font-size: 1.4rem;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 270px;
+        margin: 0 auto;
+    }
+
+    .card img {
+        height: 140px;
+    }
+
+    .card p {
+        min-height: 48px;
+        padding: 11px 8px;
+        font-size: 0.9rem;
+    }
+
+    .servico {
+        width: 100%;
+        max-width: 300px;
+        font-size: 0.9rem;
+    }
+}
