@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Solicite um atendimento na Cuidado Pet.">
+    <title>Contato | Cuidado Pet</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script src="../JS/script.js" defer></script>
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <div class="topo">
+
+            <a href="index.html" class="marca">
+                <img src="../IMG/logo.jpg" alt="Logo da Cuidado Pet" class="logo">
+                <h1>Cuidado Pet 🐾</h1>
+            </a>
+
+            <nav>
+                <a href="index.html" class="link">Início</a>
+                <a href="servicos.html" class="link">Serviços</a>
+                <a href="contato.html" class="link ativo">Contato</a>
+                <a href="equipe.html" class="link">Equipe</a>
+                <a href="confirmacao.html" class="link">Confirmação</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+        <section class="introducao">
+            <p class="subtitulo">Fale conosco</p>
+
+            <h2>Solicite um atendimento</h2>
+            <p> Preencha o formulário abaixo e nossa equipe entrará em contato para confirmar o atendimento. </p>
+
+        </section>
+
+        <section class="formulario-area">
+            <form id="formulario-contato">
+
+                <div class="campo">
+                    <label for="nome">Nome do cliente</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
+                </div>
+
+                <div class="campo">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" name="telefone" required placeholder="(79) 99999-9999">
+                </div>
+
+                <div class="campo">
+                    <label for="animal">Nome do animal</label>
+                    <input type="text" id="animal" name="animal" required placeholder="Digite o nome do pet">
+                </div>
+
+                <div class="campo">
+                    <label for="tipo-animal">Tipo de animal</label>
+                    <select id="tipo-animal" name="tipo-animal" required>
+                        <option value=""> Selecione uma opção </option>
+                        <option value="Cachorro"> Cachorro </option>
+                        <option value="Gato"> Gato </option>
+                        <option value="Ave"> Ave </option>
+                        <option value="Outro"> Outro </option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="servico">Serviço desejado</label>
+                    <select id="servico" name="servico" required>
+                        <option value=""> Selecione um serviço </option>
+                        <option value="Consulta veterinaria"> Consulta veterinária </option>
+                        <option value="Vacinacao"> Vacinação </option>
+                        <option value="Cirurgia"> Cirurgia </option>
+                        <option value="Exames laboratoriais"> Exames laboratoriais </option>
+                        <option value="Banho e tosa"> Banho e tosa </option>
+                        <option value="Emergencia"> Emergência veterinária </option>
+                    </select>
+                </div>
+
+                <div class="campo campo-completo">
+                    <label for="mensagem">Mensagem ou observação</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required
+                        placeholder="Digite uma observação"></textarea>
+                </div>
+
+                <div class="campo-completo">
+                    <button type="submit" class="botao"> Enviar solicitação </button>
+                </div>
+
+            </form>
+
+            <p id="mensagem-formulario" class="mensagem"></p>
+
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>&copy; 2026 Cuidado Pet. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Conheça os serviços veterinários oferecidos pela Cuidado Pet.">
+    <meta name="description" content="Serviços oferecidos pela Cuidado Pet.">
     <title>Serviços | Cuidado Pet</title>
-    <link rel="stylesheet" href="../CSS/servico.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script src="../JS/script.js" defer></script>
 </head>
 
 <body>
-
     <header class="cabecalho">
-        <div class="conteudo-cabecalho">
+        <div class="topo">
 
             <a href="index.html" class="marca">
-                <img src="../IMG/logo.jpg" alt="Logo da clínica Cuidado Pet" class="logo">
-                <h1>Cuidado Pet 🥼</h1>
+                <img src="../IMG/logo.jpg" alt="Logo da Cuidado Pet" class="logo">
+                <h1>Cuidado Pet 🐾</h1>
             </a>
-            <nav class="navegacao" aria-label="Navegação principal">
+
+            <nav>
                 <a href="index.html" class="link">Início</a>
                 <a href="servicos.html" class="link ativo">Serviços</a>
                 <a href="contato.html" class="link">Contato</a>
@@ -31,9 +33,11 @@
     <main>
 
         <section class="introducao">
+
             <p class="subtitulo">Cuidado, saúde e carinho</p>
+
             <h2>Serviços oferecidos</h2>
-            <p>Na Cuidado Pet, oferecemos atendimento completo para garantir o bem-estar e a saúde do seu animal.</p>
+            <p> Conheça alguns dos serviços oferecidos pela Clínica Veterinária Cuidado Pet. </p>
 
             <ul class="lista-servicos">
                 <li>Consultas veterinárias</li>
@@ -41,68 +45,93 @@
                 <li>Cirurgias</li>
                 <li>Exames laboratoriais</li>
                 <li>Banho e tosa</li>
-                <li>Emergências 24 horas</li>
+                <li>Emergência veterinária</li>
             </ul>
+
         </section>
 
-        <section class="cards" aria-label="Lista de serviços">
+        <section class="cards">
 
             <article class="card">
-                <img src="../IMG/consulta.jpg" alt="Veterinária realizando consulta em um animal">
+                <img src="../IMG/consulta.jpg" alt="Consulta veterinária">
+
                 <div class="card-conteudo">
-                    <h3>Consultas veterinárias</h3>
-                    <p> Nossos veterinários estão disponíveis para consultas de rotina e emergenciais.</p>
+                    <h3>Consulta veterinária</h3>
+                    <p> Avaliação geral da saúde do seu animal. </p>
+                    <strong class="preco">R$ 120,00</strong>
+                    <a href="contato.html?servico=Consulta%20veterinaria" class="botao"> Solicitar serviço </a>
                 </div>
+
             </article>
 
             <article class="card">
-                <img src="../IMG/vacinacao.jpg" alt="Veterinária realizando vacinação em um animal">
+                <img src="../IMG/vacinacao.jpg" alt="Vacinação de animais">
+
                 <div class="card-conteudo">
                     <h3>Vacinação</h3>
-                    <p>Oferecemos vacinação completa para cães e gatos, garantindo a saúde do seu pet.</p>
+                    <p> Vacinação para cães e gatos. </p>
+                    <strong class="preco">R$ 80,00</strong>
+                    <a href="contato.html?servico=Vacinacao" class="botao"> Solicitar serviço </a>
                 </div>
+
             </article>
 
             <article class="card">
-                <img src="../IMG/cirurgia.jpg" alt="Equipe veterinária realizando uma cirurgia">
+                <img src="../IMG/cirurgia.jpg" alt="Cirurgia veterinária">
+
                 <div class="card-conteudo">
                     <h3>Cirurgias</h3>
-                    <p>Realizamos cirurgias de pequeno e médio porte com segurança e cuidado.</p>
+                    <p> Cirurgias de pequeno e médio porte. </p>
+                    <strong class="preco">A partir de R$ 500,00</strong>
+                    <a href="contato.html?servico=Cirurgia" class="botao"> Solicitar serviço </a>
                 </div>
+
             </article>
 
             <article class="card">
-                <img src="../IMG/exames.jpg" alt="Veterinária realizando exames laboratoriais">
+                <img src="../IMG/exames.jpg" alt="Exames laboratoriais">
+
                 <div class="card-conteudo">
                     <h3>Exames laboratoriais</h3>
-                    <p>Disponibilizamos exames laboratoriais para um diagnóstico preciso e rápido.</p>
+                    <p> Exames para ajudar no diagnóstico. </p>
+                    <strong class="preco">A partir de R$ 90,00</strong>
+                    <a href="contato.html?servico=Exames%20laboratoriais" class="botao"> Solicitar serviço </a>
                 </div>
+
             </article>
 
             <article class="card">
-                <img src="../IMG/banho.jpg" alt="Profissional realizando banho e tosa em um animal">
+                <img src="../IMG/banho.jpg" alt="Banho e tosa">
+
                 <div class="card-conteudo">
                     <h3>Banho e tosa</h3>
-                    <p>Serviço completo de banho e tosa para manter seu pet limpo e saudável.</p>
+                    <p> Higiene e cuidado para o seu animal. </p>
+                    <strong class="preco">R$ 60,00</strong>
+                    <a href="contato.html?servico=Banho%20e%20tosa" class="botao"> Solicitar serviço </a>
                 </div>
+
             </article>
 
             <article class="card">
-                <img src="../IMG/emergencia.jpg" alt="Equipe veterinária atendendo uma emergência">
-                <div class="card-conteudo">
-                    <h3>Emergências 24 horas</h3>
-                    <p>Estamos disponíveis 24 horas para atender emergências veterinárias.</p>
-                </div>
-            </article>
+                <img src="../IMG/emergencia.jpg" alt="Atendimento veterinário de emergência">
 
+                <div class="card-conteudo">
+                    <h3>Emergência veterinária</h3>
+                    <p> Atendimento para situações urgentes. </p>
+                    <strong class="preco">A partir de R$ 180,00</strong>
+                    <a href="contato.html?servico=Emergencia" class="botao"> Solicitar serviço </a>
+                </div>
+
+            </article>
         </section>
 
         <section class="chamada">
-            <h2>Seu pet merece o melhor cuidado</h2>
-            <p>Entre em contato conosco e agende um atendimento.</p>
-            <a href="contato.html" class="botao">Entre em contato</a>
-        </section>
 
+            <h2>Seu pet merece o melhor cuidado</h2>
+            <p> Entre em contato e solicite um atendimento. </p>
+            <a href="contato.html" class="botao"> Entre em contato</a>
+
+        </section>
     </main>
 
     <footer class="rodape">

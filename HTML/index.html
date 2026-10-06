@@ -1,62 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clínica Veterinária</title>
+    <meta name="description" content="Conheça a Clínica Veterinária Cuidado Pet.">
+    <title>Cuidado Pet</title>
     <link rel="stylesheet" href="../CSS/style.css">
     <script src="../JS/script.js" defer></script>
 </head>
-<body>
-    <header>
-        <h1>Cuidado Pet 🐾🐒</h1>
 
-        <nav>
-            <img src="../IMG/logo.jpg" alt="Logo Cuidado Pet" class="logo">
-            <a href="index.html" class="link">Início</a>
-            <a href="servicos.html" class="link">Serviços</a>
-            <a href="contato.html" class="link">Contato</a>
-            <a href="../HTML/equipe.html" class="link">Equipe</a>
-            <a href="../HTML/confirmacao.html" class="link">Confirmação</a>
-        </nav>
+<body>
+    <header class="cabecalho">
+        <div class="topo">
+
+            <a href="index.html" class="marca">
+                <img src="../IMG/logo.jpg" alt="Logo da Cuidado Pet" class="logo">
+                <h1>Cuidado Pet 🐾</h1>
+            </a>
+
+            <nav>
+                <a href="index.html" class="link ativo">Início</a>
+                <a href="servicos.html" class="link">Serviços</a>
+                <a href="contato.html" class="link">Contato</a>
+                <a href="equipe.html" class="link">Equipe</a>
+                <a href="confirmacao.html" class="link">Confirmação</a>
+            </nav>
+
+        </div>
     </header>
 
     <main>
         <section class="hero">
-            <img src="../IMG/fundo.jpg" alt="Logo Cuidado Pet">
+            <img src="../IMG/fundo.jpg" alt="Animal recebendo cuidados veterinários">
+            <div class="hero-texto">
+                <p class="subtitulo">Cuidado, saúde e carinho</p>
+
+                <h2>O melhor cuidado para o seu pet</h2>
+                <p> Na Cuidado Pet, seu animal recebe atenção, carinho e atendimento especializado. </p>
+            </div>
+
         </section>
 
         <section class="sobre">
             <h2>Sobre a clínica</h2>
-            <p>A Cuidado Pet é uma clínica veterinária dedicada ao bem-estar dos animais de estimação.</p>
-            <p>Nossa equipe de profissionais está pronta para oferecer os melhores cuidados para seu pet.</p>
-            <p>Oferecemos serviços de consultas, vacinas, cirurgias e muito mais.</p>
+
+            <p> A Cuidado Pet é uma clínica veterinária dedicada ao bem-estar dos animais de estimação. </p>
+
+            <p> Nossa equipe de profissionais está pronta para oferecer os melhores cuidados para seu pet. </p>
+
+            <p> Oferecemos consultas, vacinas, cirurgias, exames e muito mais. </p>
+
         </section>
 
-            <h2 style="text-align: center;">Um pequeno resumo dos nossos serviços</h2>
-            <div class="cards">
-                <div class="card">
-                    <img src="../IMG/consulta.jpg" alt="Serviços oferecidos">
-                    <p>Consultas veterinárias</p>
+        <h2 class="titulo-secao"> Um pequeno resumo dos nossos serviços </h2>
+
+        <section class="cards">
+
+            <article class="card">
+                <img src="../IMG/consulta.jpg" alt="Consulta veterinária">
+                <div class="card-conteudo">
+                    <h3>Consultas veterinárias</h3>
+                    <p> Atendimento clínico para cães e gatos. </p>
                 </div>
-                <div class="card">
-                    <img src="../IMG/cirurgia.jpg" alt="Serviços oferecidos">
-                    <p>Nossos incriveis banho e tosa</p>
+            </article>
+
+            <article class="card">
+                <img src="../IMG/cirurgia.jpg" alt="Cirurgia veterinária">
+                <div class="card-conteudo">
+                    <h3>Cirurgias</h3>
+                    <p> Procedimentos realizados com segurança. </p>
                 </div>
-                <div class="card">
-                    <img src="../IMG/vacinacao.jpg" alt="Serviços oferecidos">
-                    <p>Vacinação de animais</p>
+
+            </article>
+
+            <article class="card">
+                <img src="../IMG/vacinacao.jpg" alt="Vacinação de animais">
+                <div class="card-conteudo">
+                    <h3>Vacinação</h3>
+                    <p> Vacinas para proteger a saúde do seu animal. </p>
                 </div>
-            </div>
+            </article>
         </section>
 
-        <section class="servicos">
-            <button class="servico" onclick="window.location.href='servicos.html'">Consulte aqui nossos serviços</button>
+        <section class="area-botao">
+            <a href="servicos.html" class="botao">Consulte nossos serviços</a>
         </section>
     </main>
 
-    <footer>
+    <footer class="rodape">
         <p>&copy; 2026 Cuidado Pet. Todos os direitos reservados.</p>
     </footer>
+
 </body>
+
 </html>
